@@ -1,0 +1,20 @@
+{
+  "name": "javascript",
+  "version": "0.0.1",
+  "description": "algorithms 4th example in javascript",
+  "keywords": [
+    "javascript",
+    "algorithms"
+  ],
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha -R spec"
+  },
+  "dependencies": {
+    "mocha": "*",
+    "should": "*",
+    "jscover": "*"
+  },
+  "author": "lyuehh",
+  "license": "MIT"
+}
