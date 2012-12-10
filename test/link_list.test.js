@@ -41,4 +41,16 @@ describe('Stack', function() {
     stack.isEmpty().should.be.ok;
   });
 
+  it('peek', function() {
+    var stack = new Stack();
+    stack.push(0);
+    stack.push(1);
+    stack.peek().should.equal(1);
+  });
+  it('copy', function() {
+    var str = '12345';
+    var stack = Stack.copy(str);
+    stack.size().should.equal(5);
+    stack.pop().should.equal('5'); // 后进先出
+  });
 });

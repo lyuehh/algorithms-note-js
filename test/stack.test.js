@@ -1,10 +1,10 @@
 var should = require('should');
 var Stack = require('../lib/stack');
 
-describe('Stack', function() {
+describe('Stack - Array', function() {
   it('constructor', function() {
     var stack = new Stack();
-    stack.data.should.have.length(0);
+    stack.size().should.equal(0);
   });
 
   it('push', function() {
@@ -12,7 +12,7 @@ describe('Stack', function() {
     stack.push(0);
     stack.push(1);
     stack.push(2);
-    stack.data.should.have.length(3);
+    stack.size().should.equal(3);
   });
 
   it('pop', function() {
@@ -36,4 +36,5 @@ describe('Stack', function() {
     stack.pop();
     stack.isEmpty().should.be.ok;
   });
+
 });

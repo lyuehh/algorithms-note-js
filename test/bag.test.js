@@ -4,7 +4,7 @@ var Bag = require('../lib/bag');
 describe('Bag', function() {
   it('constructor', function() {
     var bag = new Bag();
-    bag.data.should.have.length(0);
+    bag.size().should.be.equal(0);
   });
 
   it('add', function() {
@@ -12,7 +12,7 @@ describe('Bag', function() {
     bag.add(0);
     bag.add(1);
     bag.add(2);
-    bag.data.should.have.length(3);
+    bag.size().should.be.equal(3);
   });
   it('empty', function() {
     var bag = new Bag();
