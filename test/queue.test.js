@@ -38,12 +38,16 @@ describe('Queue', function() {
     queue.dequeue();
     queue.isEmpty().should.be.ok;
   });
-  it('isEmpty2', function() {
+
+  it('removeLast', function() {
     var queue = new Queue();
-    queue.isEmpty().should.be.ok;
-   // queue.enqueue(0);
-   // queue.dequeue();
-   // queue.isEmpty().should.be.ok;
+    queue.enqueue(0);
+    queue.enqueue(1);
+    queue.enqueue(2);
+    queue.size().should.equal(3);
+    queue.removeLast();
+    queue.size().should.equal(2);
+    queue.dequeue().should.equal(0);
   });
 
 });
