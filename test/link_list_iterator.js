@@ -1,4 +1,4 @@
-var Stack = require('../lib/link_list');
+var Stack = require('../lib/stack_linkedlist');
 
 var stack = new Stack();
 stack.push(0);
