@@ -18,6 +18,6 @@ describe('t1.3.9', function() {
     s.push(0);
     s.push(1);
     s.push(2);
-    Stack.getAll(s).join().should.equal('0,1,2');
+    s.toArray().join().should.equal('0,1,2');
   });
 });
