@@ -13,6 +13,7 @@ data
 pids
 logs
 results
+browser
 
 node_modules
 npm-debug.log
