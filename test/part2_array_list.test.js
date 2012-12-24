@@ -32,7 +32,6 @@ describe('part2: ArrayList', function() {
     arrayList.insert(1, 3);
     arrayList.size().should.be.equal(4);
     arrayList.remove(1).should.be.equal(3);
-    console.log(arrayList);
     arrayList.remove(2).should.be.equal(2);
     arrayList.size().should.be.equal(2);
   });
