@@ -1,5 +1,5 @@
 var should = require('should');
-var Queue = require('../lib/queue_linkedlist');
+var Queue = require('../lib/part3/queue_linkedlist');
 
 describe('Queue', function() {
   it('constructor', function() {

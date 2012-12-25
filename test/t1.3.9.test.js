@@ -1,6 +1,6 @@
 var should = require('should');
 var getStr = require('../lib/t1.3.9').getStr;
-var Stack = require('../lib/stack_linkedlist');
+var Stack = require('../lib/part3/stack_linkedlist');
 
 var str0 = '1 + 2 ) * 3 - 4 ) * 5 - 6 ) ) )'; // false
 var str0_ret = '( ( 1 + 2 ) * ( ( 3 - 4 ) * ( 5 - 6 ) ) )';

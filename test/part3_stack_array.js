@@ -1,5 +1,5 @@
 var should = require('should');
-var Stack = require('../lib/stack_array');
+var Stack = require('../lib/part3/stack_array');
 
 describe('Stack - Array', function() {
   it('constructor', function() {
