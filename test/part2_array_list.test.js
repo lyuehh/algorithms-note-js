@@ -1,5 +1,5 @@
 var should = require('should');
-var ArrayList = require('../lib/part2/array_list');
+var ArrayList = require('../lib-cov/part2/array_list');
 
 describe('part2: ArrayList', function() {
   it('constructor', function() {
@@ -43,12 +43,20 @@ describe('part2: ArrayList', function() {
     arrayList.size().should.be.equal(2);
   });
 
+  it('test', function() {
+    (function(){
+      throw new Error('failed to foo');
+    }).should.throwError(/^fail/);
+  });
+
+
   it('check', function () {
     var arrayList = new ArrayList();
     arrayList.append(0);
-    // FIXME  how to test throw error ???
-    //arrayList.remove().should.throwError();
-    //arrayList.remove(999).should.throwError();
+    // FIXME  how to test throw error
+   // arrayList.remove().should.throwError(/index/);
+   // arrayList.remove(999).should.throwError(/index/);
   });
+
 });
 

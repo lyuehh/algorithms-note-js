@@ -1,5 +1,5 @@
 var should = require('should');
-var Stack = require('../lib/part3/stack_linkedlist');
+var Stack = require('../lib-cov/part3/stack_linkedlist');
 
 describe('Stack - linkedlist', function() {
   it('constructor', function() {

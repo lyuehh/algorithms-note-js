@@ -1,7 +1,8 @@
 var should = require('should');
-var Stack = require('../lib/part3/stack_array');
+var Stack = require('../lib-cov/part3/stack_array');
 
 describe('Stack - Array', function() {
+
   it('constructor', function() {
     var stack = new Stack();
     stack.size().should.equal(0);
