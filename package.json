@@ -8,7 +8,7 @@
   ],
   "main": "index.js",
   "scripts": {
-    "test": "mocha -R spec"
+    "test": "make test"
   },
   "dependencies": {
     "mocha": "*",
