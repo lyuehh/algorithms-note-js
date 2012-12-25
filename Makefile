@@ -2,9 +2,10 @@ TESTS = test/*.test.js
 REPORTER = spec
 TIMEOUT = 10000
 JSCOVERAGE = ./node_modules/jscover/bin/jscover
+LIB_COV=1
 
 test:
-	@LIB_COV=1 @NODE_ENV=test ./node_modules/mocha/bin/mocha -R $(REPORTER) -t $(TIMEOUT) $(TESTS)
+	 @NODE_ENV=test ./node_modules/mocha/bin/mocha -R $(REPORTER) -t $(TIMEOUT) $(TESTS)
 
 test-cov: lib-cov
 	@LIB_COV=1 $(MAKE) test REPORTER=spec
