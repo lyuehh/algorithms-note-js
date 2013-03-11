@@ -12,13 +12,15 @@ int main(int argc, const char *argv[])
   /*   } */
   /* } */
 
-  printf("%d", '\r');
-
-  while((c=getchar() != EOF)) {
-    printf("[%c]", c);
+  int done = 0;
+  while(done==0) {
+    c=getchar();
     nc++;
-    if(c == '\r') {
+    if(c == '\n') {
       nl++;
+    }
+    if(c == EOF) {
+      done = 1;
     }
   }
 
