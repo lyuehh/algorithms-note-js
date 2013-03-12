@@ -12,6 +12,6 @@ int factoryial(int n) {
   return result;
 }
 int main(void) {
-  printf("%x", factoryial(100));
+  printf("%d", factoryial(100));
 }
 

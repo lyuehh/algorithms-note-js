@@ -8,14 +8,10 @@ int main(int argc, const char *argv[])
       nw,
       state = OUT;
   while((c = getchar()) != EOF) {
-    if(c == ' ' || c == '\t' || c == '\n') {
-      if(state == OUT) {
-        state = IN;
-        putchar('\n');
-      }
-    } else {
-      state = OUT;
+    if(c != ' ' && c != '\t' && c != '\n') {
       putchar(c);
+    } else {
+      putchar('\n');
     }
   }
   return 0;
