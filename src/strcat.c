@@ -4,8 +4,8 @@ void strcat1(char s[], char t[]);
 
 int main(int argc, const char *argv[])
 {
-  char str[10] = "aabb";
-  char str2[] = "cc";
+  char str[20] = "aabb";
+  char str2[] = "ccxxxdd";
   strcat1(str, str2);
   printf("%s\n", str);
   return 0;
