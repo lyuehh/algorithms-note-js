@@ -6,7 +6,13 @@ void itoa(int n, char s[]);
 
 int main(int argc, const char *argv[])
 {
-  
+  int i = 1235;
+  int i2 = -1235;
+  char s[99];
+  itoa(i, s);
+  printf("%s\n",s);
+  itoa(i2, s);
+  printf("%s\n",s);
   return 0;
 }
 
